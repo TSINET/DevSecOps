@@ -5,4 +5,9 @@ repos:
     -   id: check-added-large-files
     -   id: end-of-file-fixer
     -   id: check-ast
-
+- repo: https://github.com/bridgecrewio/checkov.git
+  rev: '658d65d8767f660939936c85c46d358b19b2c6c7'
+  hooks:
+    - id: checkov
+      verbose: true
+      args: [--download-external-modules, 'true']
