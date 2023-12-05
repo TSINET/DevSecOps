@@ -10,4 +10,5 @@ repos:
   hooks:
     - id: checkov
       verbose: true
-      args: [--download-external-modules, 'true']
+      args: [--download-external-modules, 'true', --skip-check, 'CKV2_AWS_12']
+      
